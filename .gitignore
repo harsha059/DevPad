@@ -1,0 +1,25 @@
+﻿# Flutter build and cache artifacts
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.lock
+
+# Python cache artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.log
+
+# Sensitive pairings / tokens
+config/pending_pairings.json
+desktop/pairing_qr.png
+
+# IDE and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,35 @@
+﻿{
+  "host": "0.0.0.0",
+  "port": 8765,
+  "auth_token": "devpad-secret-token-change-me",
+  "max_payload_bytes": 65536,
+  "enforce_window_target": false,
+  "profiles": {
+    "cursor": {
+      "name": "Cursor",
+      "window_patterns": ["Cursor", "cursor.exe"],
+      "context_prefix_map": {
+        "codebase": "@Codebase",
+        "web": "@Web",
+        "docs": "@Docs",
+        "git": "@Git",
+        "terminal": "@Terminal"
+      }
+    },
+    "vscode": {
+      "name": "VS Code",
+      "window_patterns": ["Visual Studio Code", "Code.exe"],
+      "context_prefix_map": {}
+    },
+    "terminal": {
+      "name": "Terminal",
+      "window_patterns": ["WindowsTerminal", "PowerShell", "cmd.exe", "bash.exe"],
+      "context_prefix_map": {}
+    },
+    "chrome": {
+      "name": "Chrome",
+      "window_patterns": ["Chrome", "Google Chrome", "chrome.exe"],
+      "context_prefix_map": {}
+    }
+  }
+}
